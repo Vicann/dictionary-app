@@ -10,6 +10,9 @@ export default function Dictionary() {
   function search(event) {
     event.preventDefault();
     alert(`${keyword}`);
+    let apiKey = "22fat04acb303d8c0a139735789ed0od";
+    let apiURL = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
+    axios.get(apiURL).then(handleResponse);
   }
 
   function handleResponse(response) {
@@ -18,9 +21,6 @@ export default function Dictionary() {
 
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
-    let apiKey = "22fat04acb303d8c0a139735789ed0od";
-    let apiURL = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
-    axios.get(apiURL).then(handleResponse);
   }
   return (
     <div className="Dictionary-form">
