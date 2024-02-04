@@ -1,3 +1,23 @@
 .Dictionary-form {
   margin: 70px 0;
 }
+
+.Dictionary-form section {
+  background-color: #f8dfd4;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 20px;
+}
+
+.Dictionary-form input {
+  width: 100%;
+  padding: 6px 4px;
+  border-radius: 6px;
+  color: #333;
+  border: 1px solid #ddd;
+}
+.Dictionary-form .hint {
+  font-size: 13px;
+  margin-top: 5px;
+}

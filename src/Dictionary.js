@@ -3,16 +3,20 @@ import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
 
-export default function Dictionary() {
-  let [keyword, setKeyword] = useState(" ");
+export default function Dictionary(props) {
+  let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
+  let [loaded, setLoaded] = useState(false);
 
-  function search(event) {
-    event.preventDefault();
-    alert(`${keyword}`);
+  function search(keyword) {
     let apiKey = "22fat04acb303d8c0a139735789ed0od";
     let apiURL = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiURL).then(handleResponse);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
   }
 
   function handleResponse(response) {
@@ -22,12 +26,28 @@ export default function Dictionary() {
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
   }
-  return (
-    <div className="Dictionary-form">
-      <form id="form" onSubmit={search}>
-        <input type="search" onChange={handleKeywordChange} />
-      </form>
-      <Results results={results} />
-    </div>
-  );
+
+  function load() {
+    setLoaded(true);
+    search();
+  }
+
+  if (loaded) {
+    return (
+      <div className="Dictionary-form">
+        <section>
+          <form id="form" onSubmit={handleSubmit}>
+            <input type="search" onChange={handleKeywordChange} />
+          </form>
+          <div className="hint">
+            suggested words: book, play, happy, plants...
+          </div>
+        </section>
+        <Results results={results} />
+      </div>
+    );
+  } else {
+    load();
+    return "Loading";
+  }
 }
