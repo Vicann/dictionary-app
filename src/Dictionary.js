@@ -8,7 +8,7 @@ export default function Dictionary(props) {
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
 
-  function search(keyword) {
+  function search() {
     let apiKey = "22fat04acb303d8c0a139735789ed0od";
     let apiURL = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiURL).then(handleResponse);
