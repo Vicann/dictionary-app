@@ -1,13 +1,43 @@
 .App-footer {
   text-align: center;
   margin: 30px 0;
+  font-size: 20px;
+}
+
+.App a {
+  color: saddlebrown;
+  text-decoration: none;
+}
+.App a:hover {
+  color: #e5af8c;
+}
+
+.App a:visited {
+  color: #381612;
 }
 
 body {
   background-color: #ffefe8;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .App {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.App .book-icon {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  bottom: 6px;
+  position: relative;
+  left: 180px;
+}
+
+.App .header-text {
+  font-size: 60px;
+
+  position: relative;
+  left: 180px;
 }

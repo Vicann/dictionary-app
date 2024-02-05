@@ -5,8 +5,10 @@ export default function Phonetic(props) {
   return (
     <section>
       <div className="phonetics">
-        <h3>Phonetic:</h3>
-        <p> {props.phonetic} </p>
+        <div>
+          <h3>Phonetic:</h3>
+          <h4> {props.phonetic} </h4>
+        </div>
       </div>
     </section>
   );
