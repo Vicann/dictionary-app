@@ -42,7 +42,7 @@ export default function App() {
           <small>
             Take a look at my{" "}
             <a
-              href="https://lucid.app/lucidspark/8d61a4e0-d4af-476b-85fb-c369b3e0d27d/edit?viewport_loc=-235%2C-1660%2C2796%2C1527%2C0_0&invitationId=inv_7b54be63-5d30-46ae-be49-b8921bb747ae"
+              href="https://docs.google.com/document/d/1dkG1O5LzweMguYs_THxkTzDSvn5oNOH4YB9muTyMdRA/edit?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
