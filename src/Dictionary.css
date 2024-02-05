@@ -21,3 +21,14 @@
   font-size: 13px;
   margin-top: 5px;
 }
+
+.Dictionary-form h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.Dictionary-form input {
+  background-color: #feefe8;
+}
