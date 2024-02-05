@@ -38,6 +38,15 @@ export default function App() {
             </a>
           </small>
         </footer>
+        <footer>
+          Take a look at my{" "}
+          <a
+            href="https://lucid.app/lucidspark/8d61a4e0-d4af-476b-85fb-c369b3e0d27d/edit?viewport_loc=-1163%2C-2223%2C4410%2C2409%2C0_0&invitationId=inv_7b54be63-5d30-46ae-be49-b8921bb747ae"
+            target="_blank"
+          >
+            wireframe
+          </a>
+        </footer>
       </div>
     </div>
   );
