@@ -1,6 +1,5 @@
 import "./App.css";
 import Dictionary from "./Dictionary";
-import logo from "./assets/book-open.svg";
 
 export default function App() {
   return (
