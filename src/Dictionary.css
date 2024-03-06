@@ -3,7 +3,7 @@
 }
 
 .Dictionary-form section {
-  background-color: #f8dfd4;
+  background-color: #c8d6bf;
   padding: 30px;
   border-radius: 16px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -30,5 +30,5 @@
 }
 
 .Dictionary-form input {
-  background-color: #feefe8;
+  background-color: #fdfffd;
 }

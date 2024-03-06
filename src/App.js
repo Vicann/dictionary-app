@@ -8,15 +8,14 @@ export default function App() {
       <div className="container">
         <header className="App-header">
           <div class="container">
-            <img class="book-icon" src={logo} alt="open-book" />{" "}
             <span class="header" className="header-text" src>
-              Dictionary App
+              Dictionary
             </span>
           </div>
         </header>
 
         <main>
-          <Dictionary defaultKeyword="jellyfish" />
+          <Dictionary defaultKeyword="sunset" />
         </main>
         <footer className="App-footer">
           <small>

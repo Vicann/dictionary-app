@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: #ffefe8;
+  background-color: #fdfffd;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -37,7 +37,7 @@ body {
 
 .App .header-text {
   font-size: 60px;
-
   position: relative;
-  left: 180px;
+  left: 300px;
+  top: 50px;
 }
